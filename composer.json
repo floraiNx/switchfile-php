@@ -1,0 +1,45 @@
+{
+    "name": "switchfile/switchfile-php",
+    "description": "PHP SDK for the switchfile file conversion API. Drop-in replacement for the CloudConvert v2 SDK, plus a one-call convert() helper.",
+    "type": "library",
+    "license": "MIT",
+    "keywords": ["switchfile", "file conversion", "converter", "cloudconvert", "api", "sdk"],
+    "homepage": "https://switchfile.io/developers#sdks",
+    "authors": [
+        {
+            "name": "Aura UG (haftungsbeschränkt)",
+            "email": "hello@switchfile.io"
+        }
+    ],
+    "support": {
+        "email": "hello@switchfile.io",
+        "docs": "https://switchfile.io/developers"
+    },
+    "require": {
+        "php": ">=8.1",
+        "ext-curl": "*",
+        "ext-json": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Switchfile\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Switchfile\\Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "platform": {
+            "php": "8.1.27"
+        },
+        "sort-packages": true
+    },
+    "scripts": {
+        "test": "phpunit"
+    }
+}
